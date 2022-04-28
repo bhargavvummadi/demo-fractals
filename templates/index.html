@@ -66,8 +66,19 @@
     </nav>
 
     <div class="container-fluid">
-      <img  id="snowlow"   class="img-fluid" alt="Snowflake-LOW">
+      <span id="removal" >
+      <h1>Fractals</h1>
+      <h3>Team 6</h3>
+      <h5>Bhargav Durga Prasad Vummadi</h5>
+      <h5>Kranthi Kumar Vudumula</h5>
+      <h5>Sai Sharath Kumar Sabbarapu</h5>
+      <h5>Sai Prakash Davuluri</h5>
+      <p>Fractals From tashfeen.org </p>
+    </span>
+
+      <img  id="snowlow"   class="img-fluid" alt="">
     </div>
+
 
 
 
@@ -86,6 +97,9 @@
           data: imagename,
           success: function(response) {
               $("#snowlow").attr('src', '/static/' + response);
+
+              var dee =   document.getElementById('removal');
+              dee.parentNode.removeChild(dee);
          },
          error: function(xhr) {
            //Do Something to handle error
